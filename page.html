@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>assignment5</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet" href="style.css">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            body{
+                font family:'Open Sans',sans-serif;
+            }
+            header{
+                height: 100px;
+                display:flex;
+                justify-content: space-around;
+                align-items:center;
+            }
+            .zero-img{
+                width:250px;
+                height:100%;
+            }
+                ul{
+                    display:flex;
+                    list-style-type: none;
+                    align-items:center;
+                }
+                ul li a{
+                    padding:0 20px;
+                    text-decoration: none;
+                    color: #3a3a3a;
+                    display:inline-block;
+            }
+            li a::after{
+                content: ;
+                display:block;
+                height:4px;
+                width:0;
+                background:#c4c4f7;
+                transition: all 0.5s
+            }
+            li a:hover::after{
+                width:100%;
+
+            }
+            main{
+                display: flex;
+                height:calc(100vh-100px);
+                align-items: center;
+                justify-content: center;
+                background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/455/142/small/abstract-light-green-polygonal-space-background-with-connecting-dots-and-lines-connection-structure-and-science-background-futuristic-hud-design-free-vector.jpg");
+            }
+            .hero-img{
+                width:550px;
+                height:30%;
+            }
+            .content-left{
+                width:30%;
+                border-style:double;
+                border-width:1cm;
+                border-color: burlywood;
+                text-align: center;
+            }
+
+            main h1{
+                font-size: 54px;
+                color: aliceblue;
+                background-color: lightseagreen;
+            }
+            main h2{
+                font-size:25px;
+                color:aliceblue;
+                font-weight:400;
+                text-transform:uppercase ;
+                letter-spacing: 8px;
+                background-color: lightseagreen;
+
+            }
+            main p{
+                font-size:14 px;
+                font-weight: 400;
+                color:beige;
+                line-height:31.5px;
+                margin:30px 30px;
+                background:lightseagreen;
+            }
+            .cta{
+                padding:15px 30px;
+                background:lightseagreen;
+                color: #fff;
+                outline:none;
+                border:none;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-radius:50px;
+
+            }
+            .signup-btn{
+                padding:10px 20px;
+                 background-color:lightseagreen;
+                 color:#fff;
+                 outline:none;
+                 border:none;
+                 font-weight:700;
+                 text-transform: uppercase;
+                 border-radius:50px;
+
+            }
+
+        </style>
+    </head>
+    <hr color="lightseagreen">
+    <body>
+        <header>
+            <div class="logo">
+                <img src="https://www.pngmart.com/files/22/Levis-Logo-PNG-Clipart.png" alt="logo" width="150px" clas="zero-img">
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#" class="signup-btn">Sign Up</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content-left">
+                <h1>Buy More!</h1>
+                <hr>
+                <h2>Slay More!</h2>
+                <hr>
+                <p>Vacay plans? Festival tickets? Doesn't matter what you've got planned for spring, we have plenty of warm weather fit options.</p>
+                <button class="cta">Shop</button>
+            </div>
+            <div class="content-right">
+                <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-110808,resizemode-1,msid-92029139/small-biz/trade/exports/insights/how-levis-boosted-sales-during-the-pandemic-and-tackled-global-supply-chain-troubles.jpg"alt="Logo" class="hero-img" width="150px">
+
+            </div>
+            </main>
+    </body>
+</html>
